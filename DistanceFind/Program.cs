@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DistanceFind;
+using System;
 
 namespace LenghtOfLine
 {
@@ -17,6 +18,10 @@ namespace LenghtOfLine
             double m = (y2 - y1) / (x2 - x1);
             double c = (y1 - m * x1);
             Console.WriteLine("The equation of the Line is: y={0}x+{1}", m, c);
+
+            CompareLine comp = new CompareLine();
+            comp.LenghtOfLine();
+
         }
     }
 }
